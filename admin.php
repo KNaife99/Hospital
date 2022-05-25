@@ -15,9 +15,8 @@
             <div class="logo-image">
                 <img src="images/logo.png" alt="">
             </div>
-            
-            <span class="logo_name">Gestao</span>
-            
+
+            <span class="logo_name">Hospital de 25</span>
         </div>
 
         <div class="menu-items">  <!--menu da esquerda------------------->
@@ -86,7 +85,7 @@
                     </div>
                     <div class="box box3">
                         <i class="fas fa-user-md"></i>
-                        <span class="text">+ Medicos</span>
+                        <span class="text">Medicos</span>
                        
                     </div>
                     <div class="box box1">
@@ -96,32 +95,29 @@
                     </div>
                 </div>
             </div>
-            <!------------------ Deve ter a lista de medicos ---------------------------------------->
-            <div class="tables">
-                <div class="las-appointments" >
-                    <h2> appointments</h2>
-                    <a href="#" class="btn"> ver </a>
+            <div class="activity">
+                <div class="title">
+                    <i class="uil uil-clock-three"></i> <!-- Mudar icon-------------------------------------------->
+                    <span class="text">Medicos</span>
                 </div>
-                <table class="appointments">
-                    <thead>
-                        <td>Nome</td>
-                        <td>Apelido</td>
-                        <td>sexo</td>
-                        <td>Nacionalidade</td>
-                        <td>Especialidade</td>
-                        <td>Nr_Bi</td>
-                        <td>Contacto</td>  
-                    </thead>
-                </table>
-                <tbody>
-                    <div class="input-field">
-                        <input type="text" placeholder="Digite o nome do medico" required>
+                <div class="activity-data">
+                    <div class="data names">
+                        <span class="data-title">Name</span>
+                        <span class="data-list">Prem Shahi</span>
+                        <span class="data-list">Deepa Chand</span>                     
                     </div>
-
-                </tbody>
-
+                    <div class="data email">
+                        <span class="data-title">Email</span>
+                        <span class="data-list">premshahi@gmail.com</span>
+                        <span class="data-list">deepachand@gmail.com</span>
+                    </div>
+                    <div class="data de admissao">
+                        <span class="data-title">Joined</span>
+                        <span class="data-list">2022-02-12</span>
+                        <span class="data-list">2022-02-12</span>  
+                    </div>         
+                </div>
             </div>
-            <!-------------------------------------------------- Aqio termina a  lista de medicos --------------------------->
         </div>
     </section>
 

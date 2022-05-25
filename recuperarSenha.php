@@ -1,3 +1,8 @@
+<?php include('server.php'); 
+
+	
+
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -18,7 +23,7 @@
           </div>
           
           <div class="row button">
-            <input type="submit" value="Submeter">
+            <input type="submit" value="submeter" name="submeter">
           </div>
         </form>
       </div>

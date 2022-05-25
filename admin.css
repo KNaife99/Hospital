@@ -335,7 +335,7 @@ nav.close ~ .dashboard .top{
 .boxes .box.box3{
     background-color: var(--box3-color);
 }
-/*.dash-content .activity .activity-data{
+.dash-content .activity .activity-data{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -360,7 +360,7 @@ nav.close ~ .dashboard .top{
     margin-top: 20px;
     white-space: nowrap;
     color: var(--text-color);
-}*/
+}
 
 /*Responsividade*/
 

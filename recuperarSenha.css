@@ -17,9 +17,6 @@ body{
   padding: 0 20px;
   margin: 170px auto;
 }
-.container h1 {
-  color: #fff;
-}
 .wrapper{
   width: 100%;
   background: #fff;
@@ -98,4 +95,15 @@ form .row input::placeholder{
 form .button input:hover{
   background: #144e43;
 }
-
+/*.wrapper form .signup-link{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 17px;
+}
+/*.wrapper form .signup-link a{
+  color: #144e43;
+  text-decoration: none;
+}
+form .signup-link a:hover{
+  text-decoration: underline;
+}*/

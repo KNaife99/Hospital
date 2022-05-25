@@ -24,7 +24,7 @@
           <div class="row button">
             <input type="submit" value="Login">
           </div>
-          <div class="signup-link"> <a href="#">Registar</a></div>
+          <div class="signup-link"> <a href="registoPaciente.php?">Registar</a></div>
         </form>
       </div>
     </div>

@@ -22,10 +22,12 @@
     <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> Hospital de 25</a>
 
     <nav class="navbar">
+        
+        <a href="registoMedico.php?"> registarmedico</a>
         <a href="#">Início</a>
         <a href="#servicos">serviços</a>
-        <a href="AgendarCnsulta.php">Agendar consulta</a>
-        <a href="login.php">Entrar</a>   
+        <a href="AgendarConsulta.php?">Agendar consulta</a>
+        <a href="login.php?">Entrar</a>   
         <a href="#sobre">Sobre</a>    
           
         

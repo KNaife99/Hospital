@@ -1,3 +1,9 @@
+<?php include('server.php'); 
+
+	
+
+?>
+
 <!DOCTYPE html>
 <!--=== Coding by CodingLab | www.codinglabweb.com === -->
 <html lang="en">
@@ -18,64 +24,64 @@
     <div class="container">
         <header>Registo de Paciente</header>
 
-        <form action="#">
+        <form  method="POST" action="server.php">
             <div class="form">
                 <div class="details personal">
                     
                     <div class="fields">
                         <div class="input-field">
                             <label>Nomes</label>
-                            <input type="text" placeholder="Digite o seu nome" required>
+                            <input type="text"  name="nome" value="<?php  echo $nome;?>"  required>
                         </div>
 
                         <div class="input-field">
                             <label>Apelido</label>
-                            <input type="text" placeholder="Digite o seu apelido" required>
+                            <input type="text"  name="apelido" value="<?php  echo $apelido;?>"  required>
                         </div>
 
                         <div class="input-field">
                             <label>Endereco</label>
-                            <input type="text" placeholder="Digite o seu endereco" required>
+                            <input type="text"  name="endereco" value="<?php  echo $endereco;?>"  required>
                         </div>
 
                         <div class="input-field">
                             <label>Data de nascimento</label>
-                            <input type="date" placeholder="Digite a data de nascimento" required>
+                            <input type="date"  name="datanascimento" value="<?php  echo $data;?>"  required>
                         </div>
 
                         <div class="input-field">
                             <label>Email</label>
-                            <input type="text" placeholder="Digite o seu email" required>
+                            <input type="text"  name="email" value="<?php  echo $email;?>"  required>
                         </div>
 
                         <div class="input-field">
                             <label>Contacto</label>
-                            <input type="number" placeholder="Digite o seu contacto" required>
+                            <input type="number" name="contacto" value="<?php  echo $contacto;?>" required>
                         </div>
 
                         <div class="input-field">
                             <label>Sexo</label>
-                            <select required>
+                            <select name="sexo" required>
                                 <option disabled selected>Genero</option>
-                                <option>Masculino</option>
-                                <option>Femenino</option>
+                                <option value="M">Masculino</option>
+                                <option value="F">Femenino</option>
                                 
                             </select>
                         </div>
 
                         <div class="input-field">
                             <label>Nr. de B.I</label>
-                            <input type="number" placeholder="Digite o numero de B.I" required>
+                            <input type="text"  name="bi" value="<?php  echo $bi;?>"  required>
                         </div>
 
                         <div class="input-field">
                             <label>Data de emissao</label>
-                            <input type="date" placeholder="Digite a data de emissao" required>
+                            <input type="date" name="dataemissao" value="<?php  echo $dataemissao;?>"  required>
                         </div>
 
                         <div class="input-field">
                             <label>Data de validade</label>
-                            <input type="date" placeholder="Digite a data de validade" required>
+                            <input type="date" name="datavalidade" value="<?php  echo $datavalidade;?>"  required>
                         </div>
 
                         <div class="input-field">
@@ -93,8 +99,8 @@
                             
                         </button>
         
-                        <button class="sumbit">
-                                <span class="btnText">Submeter</span>
+                        <button type="submit"  name="submeter" class="sumbit">
+                                <span type="submit"  name="submeter" class="btnText">Submeter</span>
                                 <i class="uil uil-navigator"></i>
                          </button>
                                 
