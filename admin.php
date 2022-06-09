@@ -21,11 +21,11 @@
 
         <div class="menu-items">  <!--menu da esquerda------------------->
             <ul class="nav-links">
-                <li><a href="#">
+                <li><a href="listaPacientes.php">
                     <i class="uil uil-estate"></i>
-                    <span class="link-name">Home</span>
+                    <span class="link-name">Pacientes</span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="listaMedicos.php">
                     <i class="fas fa-user-md"></i>
                     <span class="link-name">Medicos</span>
                 </a></li>

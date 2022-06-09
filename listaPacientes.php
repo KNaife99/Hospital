@@ -6,7 +6,7 @@
 		$editar_estado=true;
 
       
-		$rec = mysqli_query($db, "SELECT * FROM medico WHERE NR_BI=$bi");
+		$rec = mysqli_query($db, "SELECT * FROM paciente WHERE NR_BI=$bi");
 		$record = mysqli_fetch_array($rec);
 		$nome = $record['nome'];
 		$apelido = $record['apelido'];
@@ -14,11 +14,9 @@
         $endereco = $record['endereco'];
         $sexo = $record['sexo'];
         $bi = $record['bi'];
-        $dataemissao = $record['dataemissao'];
-        $datavalidade = $record['datavalidade'];
+        $senha = $record['senha'];
         $email = $record['email'];
         $contacto = $record['contacto'];
-        $especialidade = $record['especialidade'];
         $nacionalidade = $record['nacionalidade'];
     
 	}
@@ -41,38 +39,27 @@
 
 
     <header>
-        <h1 class="header-title">Medicos</h1>
+        <h1 class="header-title">Pacientes</h1>
     </header>
     <main>
-        <button type="button" class="button blue mobile" id="cadastrarCliente">
-            <a href="registoMedico.php">Cadastrar Medicos</a>
-        </button>
-        <button type="button" name="refrescar" class="button blue mobile" id="cadastrarCliente">
-            <a href="#"> Refresh</a>
-        </button>
-
-        
         <table class="records">
             <thead>
                 <tr>
                     <th>Apelido</th>
                     <th>Nome</th>
                     <th>sexo</th>
-                   
                     <th>Endereco</th>
                     <th>Email</th>
                     <th>Contacto</th>
                     <th> Nr_Bi</th>
-                    <th>Especialidade</th>
-                    <th colspan="2">Ação</th>
-                           
-                </tr>
+                 </tr>
             </thead>
             <tbody>
               
                 
-            <?php while ($row = mysqli_fetch_array($results)) { ?>
-              
+            <?php while ($row = mysqli_fetch_array($resultado)) { ?>
+                
+             
 				<tr>
 				<td><?php echo $row['APELIDO']; ?></td>
 				<td><?php echo $row['NOMES']; ?></td>
@@ -82,15 +69,7 @@
                 <td><?php echo $row['EMAIL']; ?></td>
                 <td><?php echo $row['CONTACTO']; ?></td>
                 <td><?php echo $row['NR_BI']; ?></td>
-                <td><?php echo $row['ESPECIALIDADE']; ?></td>
-				<td>
-                <button name="editar" type="button" class="button green">editar
-					<a href="registoMedico.php?editar=<?php echo $row['NR_BI']; ?>"></a>
-                    </button>
-                    <button name="del" type="button" class="button red">excluir
-					<a href="mserver.php?del=<?php echo $row['NR_BI']; ?>"></a>
-                    </button>
-				</td>
+               
 			</tr>.
 			<?php }  ?>
         
