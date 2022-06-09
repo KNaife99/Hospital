@@ -11,18 +11,18 @@
     <div class="container">
       <div class="wrapper">
         <div class="title"><span>Entrar</span></div>
-        <form action="#">
+        <form method="POST" action="loginserver.php?">
           <div class="row">
             <i class="fas fa-user"></i>
-            <input type="text" placeholder="Email" required>
+            <input type="text" name="nrbi" placeholder="Nr_BI" required>
           </div>
           <div class="row">
             <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Password" required>
+            <input type="password" name="senha" placeholder="Senha" required>
           </div>
-          <div class="pass"><a href="#">Esqueceu a senha?</a></div>
+          <div class="pass"><a href="recuperarSenha.php?">Esqueceu a senha?</a></div>
           <div class="row button">
-            <input type="submit" value="Login">
+            <input type="submit" name="login" value="login">
           </div>
           <div class="signup-link"> <a href="registoPaciente.php?">Registar</a></div>
         </form>

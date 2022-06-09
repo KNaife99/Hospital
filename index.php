@@ -24,7 +24,7 @@
     <nav class="navbar">
         
         <a href="registoMedico.php?"> registarmedico</a>
-        <a href="#">Início</a>
+        <a href="admin.php">Início</a>
         <a href="#servicos">serviços</a>
         <a href="AgendarConsulta.php?">Agendar consulta</a>
         <a href="login.php?">Entrar</a>   
@@ -52,7 +52,7 @@
         <h3>mantenha-se saudável</h3>
         <p>Clique em "Agendar" para agendar uma consulta ou pedir uma receita médica conforme a descrição do que sente
         </p>
-        <a href="#" class="btn"> Agendar <span class="fas fa-chevron-right"></span> </a>
+        <a href="login.php?" class="btn"> Agendar <span class="fas fa-chevron-right"></span> </a>
     </div>
 </section>
 <!-- Inicia a seccao  home -->

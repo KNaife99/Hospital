@@ -83,14 +83,11 @@
                         </div>
 
                         <div class="input-field">
-                            <label>Data de emissao</label>
-                            <input type="date" name="dataemissao" value="<?php  echo $dataemissao;?>" required>
+                            <label>Senha</label>
+                            <input type="password" name="senha" value="<?php  echo $dataemissao;?>" required>
                         </div>
 
-                        <div class="input-field">
-                            <label>Data de validade</label>
-                            <input type="date" name="datavalidade" value="<?php  echo $datavalidade;?>" required>
-                        </div>
+                        
                     
                         <button class="backBtn">
                             <i class="uil uil-navigator"></i>
