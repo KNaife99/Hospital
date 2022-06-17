@@ -48,6 +48,7 @@
                     <th>Apelido</th>
                     <th>Nome</th>
                     <th>sexo</th>
+                    <th>Idade</th>
                     <th>Endereco</th>
                     <th>Email</th>
                     <th>Contacto</th>
@@ -64,7 +65,7 @@
 				<td><?php echo $row['APELIDO']; ?></td>
 				<td><?php echo $row['NOMES']; ?></td>
                 <td><?php echo $row['SEXO']; ?></td>
-               
+                <td><?php echo $row['IDADE']; ?></td>
                 <td><?php echo $row['ENDERECO']; ?></td>
                 <td><?php echo $row['EMAIL']; ?></td>
                 <td><?php echo $row['CONTACTO']; ?></td>

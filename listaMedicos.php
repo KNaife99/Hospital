@@ -1,5 +1,5 @@
 <?php include('mserver.php'); 
-
+//session_start();
 	// fetch dados actualizados
 	if (isset($_GET['editar'])) {
 		$id = $_GET['editar'];
@@ -10,7 +10,7 @@
 		$record = mysqli_fetch_array($rec);
 		$nome = $record['nome'];
 		$apelido = $record['apelido'];
-		$datanascimento = $record['datanascimento'];
+		$idade= $record['idade'];
         $endereco = $record['endereco'];
         $sexo = $record['sexo'];
         $bi = $record['bi'];
@@ -57,12 +57,12 @@
                 <tr>
                     <th>Apelido</th>
                     <th>Nome</th>
-                    <th>sexo</th>
-                   
+                    <th>Sexo</th>
+                   <th>Idade</th>
                     <th>Endereco</th>
-                    <th>Email</th>
+                   
                     <th>Contacto</th>
-                    <th> Nr_Bi</th>
+                    <th>Nr_Bi</th>
                     <th>Especialidade</th>
                     <th colspan="2">Ação</th>
                            
@@ -77,21 +77,17 @@
 				<td><?php echo $row['APELIDO']; ?></td>
 				<td><?php echo $row['NOMES']; ?></td>
                 <td><?php echo $row['SEXO']; ?></td>
-               
+                <td><?php echo $row['IDADE']; ?></td>
                 <td><?php echo $row['ENDERECO']; ?></td>
-                <td><?php echo $row['EMAIL']; ?></td>
+                
                 <td><?php echo $row['CONTACTO']; ?></td>
                 <td><?php echo $row['NR_BI']; ?></td>
                 <td><?php echo $row['ESPECIALIDADE']; ?></td>
 				<td>
-                <button name="editar" type="button" class="button green">editar
-					<a href="registoMedico.php?editar=<?php echo $row['NR_BI']; ?>"></a>
-                    </button>
-                    <button name="del" type="button" class="button red">excluir
-					<a href="mserver.php?del=<?php echo $row['NR_BI']; ?>"></a>
-                    </button>
+					<a href="editarmedico.php?editar=<?php echo $_SESSION['edit']= $row['NR_BI']; ?>">editar</a>
+					<a href="mserver.php?del=<?php echo $row['NR_BI']; ?>">excluir</a>
 				</td>
-			</tr>.
+			</tr>
 			<?php }  ?>
         
                

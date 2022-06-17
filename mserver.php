@@ -28,16 +28,19 @@ if (isset($_POST['submeter'])) {
     $especialidade=$_POST['especialidade'];
     $email=$_POST['email'];
     $contacto=$_POST['contacto'];
-    $senha=$_POST['senha'];
-
-    $query = "INSERT INTO medico (nomes,apelido,data_nascimento,nacionalidade,endereco,sexo,nr_bi,email,
-    contacto,especialidade)VALUES ('$nome','$apelido','$datanascimento','$nacionalidade','$endereco',
+    $senha=password_hash($_POST['senha'],PASSWORD_DEFAULT);
+    $datanasc=strtotime($datanascimento);
+    $ano=date('Y',$datanasc);
+    $actual=date('Y');
+    $idade=$actual-$ano;
+    $query = "INSERT INTO medico (nomes,apelido,idade,nacionalidade,endereco,sexo,nr_bi,email,
+    contacto,especialidade)VALUES ('$nome','$apelido','$idade','$nacionalidade','$endereco',
      '$sexo','$bi','$email','$contacto','$especialidade')";
-    mysqli_query($bdconnect,$query);
+    mysqli_query($bdconnect,$query)or die('erro ao salvar'); 
     
 
-    $query = "INSERT INTO usuarios (nr_bi,senha,nivel)VALUES ('$bi',md5('$senha'),'$nivel')";
-    mysqli_query($bdconnect,$query);
+    $query = "INSERT INTO usuarios (nr_bi,senha,nivel)VALUES ('$bi','$senha','$nivel')";
+    mysqli_query($bdconnect,$query)or die('erro ao salvar'); 
     $_SESSION['msg'] = "Dados submetidos com sucesso";
     header('location:admin.php');
 

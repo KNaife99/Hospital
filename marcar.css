@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:content-box;
+    font-family: 'Poppins', sans-serif;
+}
+table{
+  text-align: left;
+  align-items: left;
+  display:inline;
+  align-items: center;
+  justify-content: left;
+  border: px;
+  
+  table-layout: 500px;
+ 
+}
+div{
+  align-items: left;
+  height: 86.3VH;
+ 
+  
+  background-color: #388476;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+}
+form{
+  align-items: left;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  height: 50%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #388476;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+th{
+  width: 300px;
+  height: 50px;
+}
+
+label{
+  font-size: 20px;
+  color: rgb(235, 228, 228);
+  font-family: Arial, Helvetica, sans-serif;
+ 
+  
+
+}
+
+
+.button{
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 40%;
+  margin-right: 40%;
+  height: 40px;
+  width: 180px;
+  color: rgb(12, 85, 60);
+
+}
+
+header{
+  /*background-color: #388476;*/
+  background-color:#144e43;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  box-shadow: 0 1px 2px var(--shadow-color);
+}
+
+.header-title{
+  color: #fff;
+  font-size: 2rem;
+}
+
+/*__________________________________-Responsividade______________________________---*/
+@media (max-width:991px){
+  html{
+      font-size: 55%;
+  }
+
+  .header{
+      padding: 2rem;
+  }
+
+  section{
+      padding:2rem;
+  }
+
+}
+
+@media (max-width:768px){
+
+  #menu-btn{
+      display: initial;
+  }
+
+  .header .navbar{
+      position: absolute;
+      top:115%; right: 2rem;
+      border-radius: .5rem;
+      box-shadow: var(--box-shadow);
+      width: 30rem;
+      border: var(--border);
+      background: #fff;
+      transform: scale(0);
+      opacity: 0;
+      transform-origin: top right;
+      transition: none;
+  }
+
+  .header .navbar.active{
+      transform: scale(1);
+      opacity: 1;
+      transition: .2s ease-out;
+  }
+
+  .header .navbar a{
+      font-size: 2rem;
+      display: block;
+      margin:2.5rem;
+  }
+
+}
+
+@media (max-width:450px){
+
+  html{
+      font-size: 50%;
+  }
+
+}
+
+

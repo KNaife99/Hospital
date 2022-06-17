@@ -1,3 +1,7 @@
+<?php include('mserver.php'); 
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,18 +29,15 @@
                     <i class="uil uil-estate"></i>
                     <span class="link-name">Pacientes</span>
                 </a></li>
-                <li><a href="listaMedicos.php">
-                    <i class="fas fa-user-md"></i>
-                    <span class="link-name">Medicos</span>
-                </a></li>
                 <li><a href="Marcacoes.php">
-                    <i class="fa-solid fa-calendar-days"></i>
+                    <i class="fas fa-user-md"></i>
                     <span class="link-name">Consultas pendentes</span>
                 </a></li>
                 <li><a href="agendamentos.php">
                     <i class="fa-solid fa-calendar-days"></i>
                     <span class="link-name">Agendamentos</span>
                 </a></li>
+                
                
             </ul>
             
@@ -48,7 +49,7 @@
 
                 <li class="mode">
                     <a href="#">
-                        <i class="uil uil-moon"></i>
+                    <i class="uil uil-moon"></i>
                     <span class="link-name">Modo escuro</span>
                 </a>
 
@@ -99,27 +100,9 @@
                 </div>
             </div>
             <div class="activity">
-                <div class="title">
-                    <i class="uil uil-clock-three"></i> <!-- Mudar icon-------------------------------------------->
-                    <span class="text">Medicos</span>
-                </div>
-                <div class="activity-data">
-                    <div class="data names">
-                        <span class="data-title">Name</span>
-                        <span class="data-list">Prem Shahi</span>
-                        <span class="data-list">Deepa Chand</span>                     
-                    </div>
-                    <div class="data email">
-                        <span class="data-title">Email</span>
-                        <span class="data-list">premshahi@gmail.com</span>
-                        <span class="data-list">deepachand@gmail.com</span>
-                    </div>
-                    <div class="data de admissao">
-                        <span class="data-title">Joined</span>
-                        <span class="data-list">2022-02-12</span>
-                        <span class="data-list">2022-02-12</span>  
-                    </div>         
-                </div>
+               
+           
+
             </div>
         </div>
     </section>

@@ -23,12 +23,12 @@
 
     <nav class="navbar">
         
-        <a href="registoMedico.php?"> registarmedico</a>
-        <a href="admin.php">Início</a>
-        <a href="#servicos">serviços</a>
-        <a href="AgendarConsulta.php?">Agendar consulta</a>
-        <a href="login.php?">Entrar</a>   
-        <a href="#sobre">Sobre</a>    
+        <!--a href="registoMedico.php"> registarmedico</a-->
+        <a href="#">Início</a>
+        <a href="#">serviços</a>
+        <a href="#">Agendar consulta</a>
+        <a href="login.php">Entrar</a>   
+        <a href="#">Sobre</a>    
           
         
     </nav>

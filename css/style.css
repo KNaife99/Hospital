@@ -18,6 +18,16 @@
     transition: all .2s ease-out;
     text-decoration: none;
 }
+.msg{
+	margin: 30px auto;
+	padding: 10px;
+	border-radius: 5px;
+	color: #3c763d;
+	background: #dff0d8;
+	border: 1px solid #3c763d;
+	width: 50%;
+	text-align: center;
+}
 
 html{
     font-size: 62.5%;
@@ -186,10 +196,10 @@ section:nth-child(even){
     color:var(--light-color);
 }
 
-.services .box-container{                                              /*Organizar em modo grid rectangolos de servicos*/
+.services .box-container{       /*Organizar em modo grid rectangolos de servicos*/
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-    gap: 3rem;                                                         /*Tamanho dos rectangolos de servicos*/
+    gap: 3rem;          /*Tamanho dos rectangolos de servicos*/
 }
 
 .services .box-container .box{
